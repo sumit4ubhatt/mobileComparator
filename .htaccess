@@ -1,0 +1,41 @@
+RewriteEngine On
+RewriteRule ^index.php$   /view/index.php [L] 
+RewriteRule ^home$   		/view/index.php [L]
+RewriteRule ^about-us$   /view/about-us.php [L]
+RewriteRule ^addvenue$   /view/addvenue.php [L]
+RewriteRule ^book_now$   /view/book_now.php [L]
+RewriteRule ^venue-details$   /view/venue-details.php [L]
+RewriteRule ^contact_us$   /view/contact_us.php [L]
+RewriteRule ^non_wedding$   /view/non_wedding.php [L]
+RewriteRule ^allied-services$   /view/allied-services.php [L]
+RewriteRule ^search_results$   /actionController/Controller.php [L]
+RewriteRule ^readers-corner$   /view/readers-corner.php [L]
+RewriteRule ^site-map$   /view/site-map.php [L]
+
+RewriteCond %{HTTP_HOST} ^www\.getyourvenue\.com [NC]
+RewriteRule ^(.*)$ http://getyourvenue.com/$1 [L,R=301]
+
+RewriteRule ^venues/(.*)/(.*)/(.*)$   /search_results?region=$1&category=$2&capacity=$3&action=searchVenue [L]
+RewriteRule ^wedding-venues-in-chhatarpur$ /search_results?option=1&action=viewChoices [L]
+RewriteRule ^wedding-venues-in-mundka$ /search_results?option=2&action=viewChoices [L]
+RewriteRule ^wedding-venues-in-gt-karnal-road$ /search_results?option=3&action=viewChoices [L]
+RewriteRule ^wedding-venues-in-NH8-Pushpanjali$ /search_results?option=4&action=viewChoices [L]
+RewriteRule ^wedding-venues-in-Vaishali-Vasundhara$ /search_results?option=5&action=viewChoices [L]
+RewriteRule ^wedding-venues-in-delhi-NCR$ /search_results?action=viewChoices [L]
+RewriteRule ^venue/(.*)$  /view/venue-details.php?venueid=$1&action=viewChoices
+
+RewriteRule ^contact-confirmation$   /actionController/ConfirmationController.php [L]
+RewriteRule ^booking-confirmation$   /actionController/BookingController.php [L]
+
+
+RewriteRule ^articles/flamboyant-venues-in-delhi$   /articles/venues-in-delhi.php [L]
+RewriteRule ^articles/decor-tips-for-banquet-halls-in-delhi$   /articles/banquethall-in-delhi.php [L]
+RewriteRule ^articles/tips-for-booking-delhi-banquet-halls$   /articles/tips-in-booking-delhiBanquetHalls.php [L]
+RewriteRule ^music-band-mystique$   /view/music-band.php [L]
+
+
+
+
+
+
+

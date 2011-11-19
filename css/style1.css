@@ -1,0 +1,758 @@
+@charset "utf-8";
+/* Global CSS --------------------------------------------- */
+* {
+	outline: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/bodyBg.jpg) repeat;
+	font: normal 12px Tahoma, Geneva, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+}
+img {
+	border: none;
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.red {
+	color: #f00;
+}
+p {
+	font:normal 12px/19px Tahoma, Geneva, sans-serif;
+	color:#3b3b3b;
+	padding:5px 0;
+	margin:0;
+}
+/* Page Structure ------------------------------------------*/
+#wrapper {
+	background: url(../images/currtens.png) repeat-x top center;
+	width: 100%;
+	min-height: 500px;
+}
+#main {
+	width: 1002px;
+	margin: auto;
+}
+#header {
+	background: url(../images/headerBg.png) repeat-x top center;
+	margin: 79px 0 0 0;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+#header .logo {
+	position: absolute;
+	top: -72px;
+	left: 12px;
+}
+#header .hotlineNum {
+	position: absolute;
+	right: 0px;
+	top: -78px;
+}
+#header .headerSlogan {
+	font: italic 20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	position: absolute;
+	color: #7a7979;
+	width: 400px;
+	text-align: center;
+	right: 217px;
+	top: 15px;
+}
+#header .headerSlogan span {
+	font-size:24px;
+	display:block;
+}
+#header .topNav {
+	background: url(../images/topNavBg.jpg) repeat-x top center;
+	float: left;
+	clear: both;
+	width: 98%;
+	margin: 0 0 0 10px;
+	font: bold 15px/32px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #272727;
+	text-align: center;
+}
+#header .topNav ul {
+	list-style:none;
+	margin:0 0 0 70px;
+	padding:0;
+	float:left
+}
+#header .topNav ul li {
+	float:left;
+	background:url(../images/menu-divider.png) right center no-repeat;
+	padding-right:2px;
+	height:35px;
+}
+#header .topNav ul li.last {
+	background:none;
+	padding:0;
+}
+#header .topNav a {
+	color: #272727;
+	float:left;
+	padding:0 12px;
+	font-size:14px;
+}
+#header .topNav a:hover, #header .topNav a.active {
+	color: #f8039c;
+	text-decoration: underline;
+}
+#contentArea {
+	clear: both;
+}
+#leftNav {
+	float: left;
+	width: 67%;
+}
+#leftNavNarrow {
+	float: left;
+	width: 18%;
+}
+#rightNav {
+	float: right;
+	width: 31%;
+}
+#rightNavWide {
+	float: right;
+	width: 81%;
+}
+#centerPart {
+	float: left;
+	width: 62%;
+	margin-left:1.1%;
+}
+#rightNavNarrow {
+	float: right;
+	width: 18%;
+}
+#content {
+}
+#footer {
+	float: left;
+	clear: both;
+	text-align: center;
+	width: 100%;
+	margin: 15px 0;
+	font: bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#footer a {
+	color: #272727;
+}
+#footer a:hover {
+	color: #fff;
+}
+.copyright {
+	font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.box {
+	width: 100%;
+	margin: 18px 0 0 0;
+	float: left;
+}
+.box .boxtop {
+	overflow: hidden;
+}
+.box .boxtop .boxtopbg {
+	background: url(../images/boxtopbg.jpg) repeat-x top center;
+	width: 96.2%;
+	height: 20px;
+	margin: auto;
+}
+.box .boxtop .boxtopbg.sml {
+	width:90%;
+ *width:83%;
+}
+.box .boxtop .boxtopbg.sml2 {
+	width:90%;
+ *width:88%;
+}
+.box .boxbot .boxbotbg {
+	background: url(../images/boxbotbg.jpg) repeat-x top center;
+	width: 96.2%;
+	height: 20px;
+	margin: auto;
+}
+.box .boxbot .boxbotbg.sml {
+	width:90%;
+ *width:83%;
+}
+.box .boxbot .boxbotbg.sml2 {
+	width:90%;
+ *width:88%;
+}
+.box .boxbot {
+	position:relative;
+}
+.box .boxbot .flower {
+	position: absolute;
+	right: 3px;
+	top: -43px;
+}
+.fullboxBg {
+	border: 3px solid #b2b9c2;
+	border-top: 0px;
+	border-bottom: 0px;
+	background: #fff;
+	clear: both;
+}
+.boxContent {
+	background: url(../images/boxBg.jpg) repeat-x top;
+	width: 100%;
+	margin: auto;
+}
+.boxGr {
+	background: url(../images/boxGr.jpg) repeat-x bottom;
+	padding: 0 15px;
+	overflow: hidden;
+}
+.boxGr h3 {
+	margin: 0 0 8px 0;
+	padding: 0;
+	font: normal 20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.boxGr h4 {
+	margin: 0 0 8px 0;
+	padding: 0;
+	font: bold 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.boxheight {
+	min-height:391px;
+}
+.box .boxtop2 {
+	overflow: hidden;
+}
+.box .boxtop2 .boxtopbg {
+	background: url(../images/boxTop2.png) repeat-x top center;
+	width: 96.2%;
+	height: 20px;
+	margin: auto;
+}
+.box .boxtop2 .boxtopbg.sml {
+	width:90%;
+ *width:83%;
+}
+.box .boxbot2 .boxbotbg {
+	background: url(../images/boxBot2bg.png) repeat-x top center;
+	width: 96.2%;
+	height: 20px;
+	margin: auto;
+}
+.box .boxbot2 .boxbotbg.sml {
+	width:90%;
+}
+.box .boxbot2 {
+	position:relative;
+}
+.boxGr2 {
+	background: url(../images/boxBG2.png) repeat-x top;
+	padding: 0 15px;
+	overflow: hidden;
+}
+.boxGr2 h3 {
+	margin: 0 0 8px 0;
+	padding: 0;
+	font: normal 20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/* Fonts and Other -----------------------------------------*/
+.venCat {
+	width: 32%;
+	float: left;
+	margin: 0 5px 10px 0;
+}
+.venCat img {
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+.venCat .pcName {
+	font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#272727;
+}
+
+.venCat .catName {
+	font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#272727;
+}
+.venCat .catName:hover {
+	color: #f8039c;
+}
+.venCat .moreCat {
+	background: url(../images/arrow.jpg) no-repeat left;
+	padding: 0 0 0 10px;
+	color: #000;
+	margin: 10px 0 0 0;
+}
+.homeSearch {
+	margin: 0;
+	padding: 0;
+}
+.homeSearch label {
+	font: bold 12px Tahoma, Geneva, sans-serif;
+	display: block;
+	margin: 20px 0 10px 0;
+}
+.homeSearch select {
+	border: 1px solid #f8039c;
+	width: 100%;
+	padding: 2px;
+	margin: 0 0 15px 0;
+}
+.button {
+	margin: 30px 0 0 50px;
+}
+.ourUnique {
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+}
+.ourUnique li {
+	margin: 0 20px 5px 0;
+	padding: 0 0 0 23px;
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#626161;
+}
+.ourUnique li.icon01 {
+	background: url(../images/icon01.png) no-repeat left top;
+}
+.ourUnique li.icon02 {
+	background: url(../images/icon02.png) no-repeat left top;
+	min-height:20px;
+	padding-top:5px;
+}
+.ourUnique li.icon03 {
+	background: url(../images/icon03.png) no-repeat left top;
+}
+.ourUnique li.icon04 {
+	background: url(../images/icon04.png) no-repeat left top;
+	min-height:16px;
+	padding-top:5px;
+}
+.ourUnique li.icon05 {
+	background: url(../images/icon05.png) no-repeat left top;
+	min-height:20px;
+	padding-top:5px;
+}
+.google-adds {
+	width:100%;
+	padding:10px 0 0 0;
+	text-align:center;
+}
+.banner-adds {
+	width:100%;
+	padding:10px 0 10px 0;
+	text-align:center;
+	min-height:70px;
+	font:bold 17px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+p.dec {
+	font:normal 12px/18px Verdana, Arial, Helvetica, sans-serif;
+	color:#626161;
+	padding:0;
+}
+/* ----------- Contact form --------- */
+
+.contactform {
+	width:100%;
+}
+.contactform label {
+	display: block;
+	font: bold 12px Tahoma, Geneva, sans-serif;
+	margin: 12px 0 10px;
+}
+.contactform .input-txt {
+	border:1px solid #F8039C;
+	padding:5px 15px;
+	font:normal 11px Tahoma, Geneva, sans-serif;
+	width:240px;
+}
+.contactform .txt-area {
+	border:1px solid #F8039C;
+	padding:5px 15px;
+	font:normal 11px Tahoma, Geneva, sans-serif;
+	width:240px;
+	height:50px;
+}
+
+/* ---------- Small Popular Choice box -------- */
+
+.venCatSml {
+	width: 100%;
+	float: left;
+	margin: 0 0px 13px 0;
+}
+.venCatSml img {
+	float: left;
+	margin: 0 8px 0 0;
+}
+.venCatSml .catName {
+	font: bold 11px Tahoma, Geneva, sans-serif;
+	color:#757474;
+	margin-bottom:10px;
+	display:inline-block;
+}
+.venCatSml .catName:hover {
+	color: #f8039c;
+}
+.venCatSml .moreCat {
+	background: url(../images/bullet.gif) no-repeat left;
+	padding: 0 0 0 10px;
+	color: #757474;
+	margin: 5px 0 0 0;
+}
+/* ---------- Venue Details ------------- */
+.relative {
+	position:relative;
+}
+.likebuttons {
+	width:190px;
+	height:30px;
+	position:absolute;
+	top:5px;
+	right:10px;
+}
+.venue-desc {
+	width:202px;
+}
+.venue-desc img {
+	border:2px solid #f8039c;
+	margin-bottom:10px;
+}
+.venue-desc .addressLine {
+	font:normal 12px Tahoma, Geneva, sans-serif;
+}
+.google-map {
+	border:2px solid #f8039c;
+	width:560px;
+	height:310px;
+}
+/* ------------ image slider ------------ */
+.image-slider {
+	width:529px;
+	height:276px;
+	border:2px solid #f8039c;
+}
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+	display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:43%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+.theme-default .nivo-controlNav {
+	position:absolute;
+	bottom:5px;
+	right:10px;
+}
+.theme-default .nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background: url(../images/bullets.png) left top no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:-22px 0;
+}
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:17px;
+	height:38px;
+	background:url(../images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+.theme-default a.nivo-nextNav {
+	background-position:-18px 0;
+	right:0px;
+}
+.theme-default a.nivo-prevNav {
+	left:0px;
+}
+.theme-default .nivo-caption {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+	color:#fff;
+	border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+	color:#fff;
+}
+.latest-news {
+	width:230px;
+}
+.latest-news p {
+	line-height:17px;
+	padding:0 0 10px 0;
+}
+/* ------------ Get venue form --------- */
+
+.getVenue {
+	width:100%;
+}
+.getVenue .getvenue_cont {
+	width:32%;
+	float:left;
+	margin-right:1.5%;
+	position:relative;
+}
+.getVenue .getvenue_cont.last {
+	margin:0;
+}
+.getVenue .getvenue_cont label {
+	display: block;
+	font: bold 12px Tahoma, Geneva, sans-serif;
+	margin: 12px 0 10px;
+}
+.getVenue .getvenue_cont .txt-name {
+	border:1px solid #F8039C;
+	padding:5px 10px;
+	font:normal 11px Tahoma, Geneva, sans-serif;
+	width:91%;
+}
+.getVenue .getvenue_cont select {
+	border: 1px solid #F8039C;
+	margin: 0 0 15px;
+	padding: 2px;
+	width: 100%;
+}
+.getVenue .gobutton {
+	width:68px;
+	margin-right:8px;
+}
+.calicon {
+	position:absolute;
+	bottom:3px;
+	right:3px;
+}
+/* -------- Search Result page --------*/
+
+.searchImg {
+	width:188px;
+	border:2px solid #f8039c;
+}
+.searchDec {
+	width:375px;
+}
+.searchDec h3 {
+	font-size:18px;
+	margin-bottom:5px;
+}
+.searchDec p {
+	padding:0 0 10px 0;
+	line-height:16px;
+	min-height:80px
+}
+a.imgGalleryBtn {
+	background:url(../images/search-result-btn.png) left top no-repeat;
+	width:116px;
+	height:30px;
+	text-indent:-10000px;
+}
+a.BookNowBtn {
+	background:url(../images/search-result-btn.png) -118px top no-repeat;
+	width:116px;
+	height:30px;
+	text-indent:-10000px;
+	margin-left:10px
+}
+a.locationMapBtn {
+	background:url(../images/search-result-btn.png) -236px top no-repeat;
+	width:96px;
+	height:30px;
+	text-indent:-10000px;
+}
+span.searchOpt {
+	margin-right:20px;
+}
+.prev-Btn {
+	background:url(../images/next-prev-btn.png) left top no-repeat;
+	width:146px;
+	height:35px;
+	text-indent:-10000px;
+}
+.next-Btn {
+	background:url(../images/next-prev-btn.png) left top no-repeat;
+	width:146px;
+	height:35px;
+	text-indent:-10000px;
+}
+.pagi {
+	float:left;
+	width:280px;
+	text-align:center;
+	padding-left:10px;
+	font:normal 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:5px;
+}
+.pagi a {
+	color:#000;
+}
+.pagi a:hover {
+	color:#f8039c;
+}
+.pagi span.current {
+	color:#f8039c;
+}
+.testi {
+	width:100%;
+}
+.testi.divid-line {
+	background:url(../images/testi-divider.png) center bottom no-repeat;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.testi p {
+	font:normal 11px Verdana, Geneva, sans-serif;
+	line-height:14px;
+}
+.testi p span {
+	display:block;
+	padding:5px 0;
+	text-align:right;
+	font-style:italic
+}
+.testi p a.readM {
+	font-weight:bold;
+	text-align:right;
+	display:inline-block;
+	margin-top:10px;
+	color:#000;
+}
+.testi p a.readM:hover {
+	color:#f8039c;
+}
+.why-Q {
+	background:url(../images/bullet2.gif) left 4px no-repeat;
+	display:block;
+	padding:0 0 0 10px;
+	font:bold 10px Verdana, Geneva, sans-serif;
+}
+.why-A {
+	display:block;
+	padding:5px 0 10px 10px;
+	font:normal 10px Verdana, Geneva, sans-serif;
+}
+.runSearch {
+	width:100%;
+}
+.runSearch label {
+	font: bold 12px Tahoma, Geneva, sans-serif;
+	display: block;
+	margin: 10px 0 10px 0;
+	color:#7f7d7d;
+}
+.runSearch select {
+	border: 1px solid #f8039c;
+	width: 100%;
+	padding: 2px;
+	margin: 0 0 10px 0;
+	font:normal 11px Tahoma, Geneva, sans-serif;
+	color:#7f7d7d;
+}
+.runSearch .button {
+	margin: 30px 0 0 10px;
+}
