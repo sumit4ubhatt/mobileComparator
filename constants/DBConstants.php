@@ -16,8 +16,8 @@ class DBConstants{
 	
 	public $HOSTNAME = "localhost";
 	public $MYSQLLOGIN = "root";
-	public $MYSQLPASSWORD = "password";
-	public $DATABASE = "getyourv_nitin";
+	public $MYSQLPASSWORD = "";
+	public $DATABASE = "gyv";
 	public $pageOffset = "4";
 	
 }//class

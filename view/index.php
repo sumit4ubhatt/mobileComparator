@@ -156,7 +156,7 @@
                 <!-- Box Content Start -->
                 <h3>Your One Stop Shop For Wedding Venues in Delhi &amp; NCR</h3>
                 <p class="dec">
-                <p>A warm welcome to Getyourvenue.com!</p>
+                <p>A warm welcome to Getyourvenue.com!yup</p>
 				<p>
 				Draped in the rich fabric of tradition, weddings are the most joyous occasions
 				in one’s life. A splendid bliss of wedding brings alive the golden dream. And the
